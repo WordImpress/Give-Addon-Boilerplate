@@ -16,25 +16,14 @@
 
 	<!-- Bring in WP rules. -->
 	<rule ref="WordPress-Core">
-		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
-		<exclude name="WordPress.WP.I18n.MissingTranslatorsComment" />
+		<exclude name="Generic.Arrays.DisallowLongArraySyntax.Found" />
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
-	</rule>
-
-	<rule ref="WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid">
-		<exclude-pattern>src/*</exclude-pattern>
-	</rule>
-
-	<rule ref="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase">
-		<exclude-pattern>src/*</exclude-pattern>
-	</rule>
-
-	<rule ref="WordPress.Files.FileName.NotHyphenatedLowercase">
-		<exclude-pattern>src/*</exclude-pattern>
-	</rule>
-
-	<rule ref="Generic.Arrays.DisallowLongArraySyntax.Found">
-	  <type>warning</type>
+		<exclude name="WordPress.WP.I18n.MissingTranslatorsComment" />
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+		<exclude name="WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid" />
+		<exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase" />
+		<exclude name="WordPress.NamingConventions.ValidVariableName.InterpolatedVariableNotSnakeCase" />
 	</rule>
 
 	<rule ref="WordPress.WP.I18n">
